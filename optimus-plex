@@ -16,7 +16,7 @@ https://hub.docker.com/r/pablominue/optimus-plex/</Overview>
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://github.com/pablominue/optimus-plex/blob/main/src/assets/optimus-plex.png?raw=true</Icon>
+  <Icon>https://github.com/pablominue/optimus-plex/blob/main/src/assets/optimus-plex-icon.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
