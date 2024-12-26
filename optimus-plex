@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>optimus-plex</Name>
+  <Repository>pablominue/optimus-plex</Repository>
+  <Registry>https://hub.docker.com/r/pablominue/optimus-plex/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/pablominue/optimus-plex/</Support>
+  <Project/>
+  <Overview>OPTIMUS PLEX:&#xD;
+&#xD;
+This container allows file conversion for the Plex Media Library (among other future features) that will enhance the streaming of files.&#xD;
+https://hub.docker.com/r/pablominue/optimus-plex/</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/pablominue/optimus-plex/blob/main/src/assets/optimus-plex.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1735222696</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Variable 5" Target="BASE_PATH" Default="/app/data" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/app/data</Config>
+  <Config Name="INPUT_FORMAT" Target="INPUT_FORMAT" Default="mp4" Mode="" Description="the input formats that will be converted. Can be a list of formats (&#13;&#10;avi, m2ts, mkv&#13;&#10;)" Type="Variable" Display="always" Required="false" Mask="false">m2ts</Config>
+  <Config Name="OUTPUT_FORMAT" Target="OUTPUT_FORMAT" Default="mkv" Mode="" Description="The desired output format. Recomended: mp4 or mkv" Type="Variable" Display="always" Required="false" Mask="false">mkv</Config>
+  <Config Name="PLEX_URL" Target="PLEX_URL" Default="http://localhost:32400" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:32400</Config>
+  <Config Name="Container Variable 10" Target="PLEX_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Container Variable 11" Target="DELETE_OLD" Default="1" Mode="" Description="Delete Old format files:&#13;&#10;1: True&#13;&#10;0: False" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="BASE_PATH" Target="/app/data" Default="" Mode="rw" Description="The Path to your media library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/</Config>
+  <Config Name="LANG" Target="LANG" Default="C.UTF-8" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">C.UTF-8</Config>
+  <Config Name="PYTHON_VERSION" Target="PYTHON_VERSION" Default="3.11.11" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">3.11.11</Config>
+  <Config Name="POETRY_VENV" Target="POETRY_VENV" Default="/opt/poetry-venv" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">/opt/poetry-venv</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+</Container>
